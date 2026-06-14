@@ -188,6 +188,50 @@
             align-items: center;
         }
 
+        .about-side {
+            display: grid;
+            gap: 1.5rem;
+        }
+
+        .photo-card {
+            position: relative;
+            border-radius: 24px;
+            overflow: hidden;
+            background: linear-gradient(135deg, rgba(138, 126, 114, 0.15), rgba(74, 89, 99, 0.18));
+            border: 1px solid rgba(138, 126, 114, 0.18);
+            box-shadow: 0 18px 40px rgba(0, 0, 0, 0.08);
+        }
+
+        .photo-card img {
+            display: block;
+            width: 100%;
+            aspect-ratio: 4 / 5;
+            object-fit: cover;
+        }
+
+        .photo-card::after {
+            content: 'Sunny 廖珮綸';
+            position: absolute;
+            left: 1rem;
+            right: 1rem;
+            bottom: 1rem;
+            padding: 0.8rem 1rem;
+            border-radius: 16px;
+            background: rgba(247, 245, 240, 0.88);
+            backdrop-filter: blur(8px);
+            color: var(--secondary-color);
+            font-family: var(--font-kiwi);
+            font-size: 1.05rem;
+            text-align: center;
+            letter-spacing: 0.03em;
+        }
+
+        .photo-note {
+            font-size: 0.95rem;
+            color: var(--text-muted);
+            text-align: center;
+        }
+
         .about-story h3 {
             font-size: 1.5rem;
             margin-bottom: 1rem;
@@ -418,8 +462,8 @@
     <section id="hero">
         <div class="container">
             <span class="hero-badge">SaaS 客戶成功經理 × 職涯引導教練</span>
-            <h1>不盲目迎合標籤，<br>在對的位子，找到屬於妳的軟體業舞台</h1>
-            <p class="hero-subtitle">妳正卡在「想轉職新創軟體業（CSM / 業務 / PM），卻摸不清內部完整分工與方向」的混亂期嗎？讓我用親身走過的實戰路徑，陪妳釐清優勢、給出具體落地的實踐計畫。</p>
+            <h1>不盲目迎合標籤，<br>在對的位子，找到屬於您的軟體業舞台</h1>
+            <p class="hero-subtitle">您正卡在「想轉職新創軟體業（CSM / 業務），卻摸不清內部完整分工與方向」的混亂期嗎？讓我用親身走過的實戰路徑，陪您釐清優勢、給出具體落地實踐計畫。</p>
             <a href="#contact" class="btn">預約一對一職涯諮詢</a>
         </div>
     </section>
@@ -437,9 +481,16 @@
                         「當年，我因為主動上了實務課程，並直接與 OmniChat 的行銷總監聯繫爭取，成功撬開了新創軟體的大門。」
                     </div>
                 </div>
-                <div class="about-vision">
+                <div class="about-side">
+                    <div class="photo-card">
+                        <img
+                            alt="Sunny 廖珮綸 照片"
+                            src="./0807GSUHA02廖珮綸__2_修1拷貝.jpg"
+                        />
+                    </div>
                     <p>這段打破常規、主動出擊的轉職轉折，讓我深深相信：<strong>只要放在對的位子，每個人都能找到自己的一片天。</strong></p>
-                    <p>現在，我將多年的 SaaS（特別是 MarTech 零售電商領域）客戶成功經驗、上百家客戶（含全球百大企業）的顧問思維，內化為一套「職涯客戶成功引導法」，不只給妳方向，更給妳具體執行的特攻計畫。</p>
+                    <p>現在，我將多年的 SaaS（特別是 MarTech 零售電商領域）客戶成功經驗、上百家客戶（含全球百大企業）的顧問思維，內化為一套「職涯客戶成功引導法」，不只給您方向，更給您具體執行的特攻計畫。</p>
+                    <p class="photo-note">已套用您提供的正式照片。</p>
                 </div>
             </div>
         </div>
@@ -454,7 +505,7 @@
                 <div class="service-card">
                     <h3>一對一深度職涯諮詢</h3>
                     <div class="price">體驗引導制</div>
-                    <p>適合迷惘於「軟體業核心分工、新創生態、如何選定職能（CSM / 業務 / PM）」的跨領域轉職者。不只看表象，我們從底層邏輯梳理妳的轉職優勢。</p>
+                    <p>適合迷惘於「軟體業核心分工、新創生態、如何選定職能（CSM / 業務 / PM）」的跨領域轉職者。不只看表象，我們從底層邏輯梳理您的轉職優勢。</p>
                     <ul class="service-features">
                         <li>專屬優勢盤點與產業職能對齊</li>
                         <li>CNC 職涯諮詢專業三套牌卡引導</li>
@@ -466,7 +517,7 @@
                 <div class="service-card">
                     <h3>實戰履歷健檢與人脈對接</h3>
                     <div class="price">精準策略制</div>
-                    <p>有了方向，就需要能敲開大門的敲門磚。我將以聘用主管與內部推薦的視角，重新包裝妳的跨領域經驗，並傳授如何進行高勝率的 Coffee Chat。</p>
+                    <p>有了方向，就需要能敲開大門的敲門磚。我將以聘用主管與內部推薦的視角，重新包裝您的跨領域經驗，並傳授如何進行高勝率的 Coffee Chat。</p>
                     <ul class="service-features">
                         <li>跨領域痛點轉化與故事化包裝</li>
                         <li>一對一具體、可實踐的求職行動計畫</li>
@@ -488,7 +539,7 @@
                     <div class="process-number">01</div>
                     <div class="process-content">
                         <h3>理感並具的盲點盤點</h3>
-                        <p>運用專業的 <strong>CNC 職涯諮詢三套牌卡</strong>，理性梳理妳的核心能力與價值觀；若妳不排斥，我們能進一步結合<strong>紫微斗數命盤</strong>作為輔助，從先天特質與運勢切入，全方位找出潛在的轉職盲點。</p>
+                        <p>運用專業的 <strong>CNC 職涯諮詢三套牌卡</strong>，理性梳理您的核心能力與價值觀；若您不排斥，我們能進一步結合<strong>紫微斗數命盤</strong>作為輔助，從先天特質與運勢切入，全方位找出潛在的轉職盲點。</p>
                     </div>
                 </div>
                 <!-- Step 2 -->
@@ -496,7 +547,7 @@
                     <div class="process-number">02</div>
                     <div class="process-content">
                         <h3>軟體產業地圖精準對齊</h3>
-                        <p>憑藉我在 SaaS 領域服務上百間零售電商客戶的實戰經驗，為妳解構軟體業內部的真實分工。不再看著職缺瞎猜，而是精準鎖定最適合妳的發光舞台。</p>
+                        <p>憑藉我在 SaaS 領域服務上百間零售電商客戶的實戰經驗，為您解構軟體業內部的真實分工。不再看著職缺瞎猜，而是精準鎖定最適合您的發光舞台。</p>
                     </div>
                 </div>
                 <!-- Step 3 -->
@@ -504,7 +555,7 @@
                     <div class="process-number">03</div>
                     <div class="process-content">
                         <h3>客製化實踐計畫擬定</h3>
-                        <p>拒絕雞湯式的空泛鼓勵。我會陪妳寫下「具體、可實踐」的行動計畫，包含如何突破盲點包裝履歷、以及如何像我當年一樣，藉由策略性上課與主動聯繫，敲定關鍵面試。</p>
+                        <p>拒絕雞湯式的空泛鼓勵。我會陪您寫下「具體、可實踐」的行動計畫，包含如何突破盲點包裝履歷、以及如何像我當年一樣，藉由策略性上課與主動聯繫，敲定關鍵面試。</p>
                     </div>
                 </div>
                 <!-- Step 4 -->
@@ -512,7 +563,7 @@
                     <div class="process-number">04</div>
                     <div class="process-content">
                         <h3>實戰人脈 Coffee Chat 機會</h3>
-                        <p>轉職新創，人脈往往是隱形王牌。當妳準備就緒，諮詢服務內將包含引導妳進行高品質的 Coffee Chat。我會傳授核心心法，甚至協助引薦合適的人脈網絡，讓妳少走彎路。</p>
+                        <p>轉職新創，人脈往往是隱形王牌。當您準備就緒，諮詢服務內將包含引導您進行高品質的 Coffee Chat。我會傳授核心心法，甚至協助引薦合適的人脈網絡，讓您少走彎路。</p>
                     </div>
                 </div>
             </div>
@@ -522,7 +573,7 @@
     <!-- Trust Section -->
     <section id="trust">
         <div class="container">
-            <h2 class="section-title">妳可以信賴的專業資產</h2>
+            <h2 class="section-title">您可以信賴的專業資產</h2>
             <div class="trust-grid">
                 <div class="trust-stat">
                     <span class="stat-num">100+</span>
@@ -541,7 +592,7 @@
                     <p style="margin-top: 0.5rem; margin-bottom: 0;">
                         過往於 OmniChat 期間深耕 MarTech 領域，積累各方核心人脈；<br>
                         同時具備 ITI 背景，串聯各大科技硬體廠（如微星 MSI 等）之優秀 Sales 與 PM 網絡。<br>
-                        <strong>這些累積，都將成為妳轉職路上強大的 Coffee Chat 潛在資源。</strong>
+                        <strong>這些累積，都將成為您轉職路上強大的 Coffee Chat 潛在資源。</strong>
                     </p>
                 </div>
             </div>
@@ -552,8 +603,8 @@
     <section id="contact">
         <div class="container">
             <div class="contact-box">
-                <h2 class="section-title">開始妳的軟體轉職蛻變</h2>
-                <p>停止一個人在迷惘中打轉。讓我用過往跨領域突圍的經驗，陪妳一步步搭建屬於妳的 SaaS 舞台。<br>歡迎點擊下方信箱或直接來信，與我開啟一場溫暖而精準的職涯對話。</p>
+                <h2 class="section-title">開始您的軟體轉職蛻變</h2>
+                <p>停止一個人在迷惘中打轉。讓我用過往跨領域突圍的經驗，陪您一步步搭建屬於您的 SaaS 舞台。<br>歡迎點擊下方信箱或直接來信，與我開啟一場溫暖而精準的職涯對話。</p>
                 <a href="mailto:e5200810@gmail.com" class="email-link">e5200810@gmail.com</a>
                 <a href="mailto:e5200810@gmail.com" class="btn" style="background-color: #FFFFFF; color: var(--secondary-color);">立即來信預約諮詢</a>
             </div>
